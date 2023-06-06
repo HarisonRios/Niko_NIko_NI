@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"content="">
+        <link rel="stylesheet" href="style.css">
+        <script src="libs/jquery-3.6.0.min.js"></script>
+        <script src="libs/jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+        <title>NikoJapan - Cadraste-se </title>
+
+    </head>
+    <body class="fundo1">
+        <header >
+            <nav class="menu">  
+             <img class="logo" src="imgs/logo.png" alt="NikoJapan">
+               <a class="itens" href="index.html"> Home </a> 
+               <a class="itens" href="cars.html"> Cars </a>
+               <a class="itens" href="contact.html"> Contact </a> 
+               <a class="itens" href="aboutus.html"> About Us </a> 
+               <a class="itens" href="loginpage.html"> Login </a> 
+            </nav> 
+       </header>
+
+        <div id="login">
+        <form class="card">
+        <div class="card-header">
+        <h2>Cadraste-se</h2>
+        </div>
+
+
+
+        <div class="card-content">
+        <div class="card-content-area">
+        <label for="usuario">Nome (Completo)</label>
+        <input type="text" id="usuario" autocomplete="off">
+        </div>
+        
+        
+        <div class="card-content-area">
+        <label for="password">Data de Nascimento</label>
+        <input type="date" id="password" autocomplete="off">
+        </div>
+
+
+    
+       <div class="card-content-area">
+       <label for="password">RG</label>
+       <input type="text" id="password" autocomplete="off" name="rg" class="textRg">
+       </div>
+
+
+    
+       <div class="card-content-area">
+       <label for="password">CPF</label class="textCpf">
+       <input type="text" id="password" autocomplete="off" name="cpf" class="textCpf ">
+       </div>
+
+
+       
+       <div class="card-content-area">
+       <label for="password">Telefone</label>
+       <input type="tel" name="telefone" id="password" autocomplete="off" class="textTel">
+       </div>
+
+
+
+       <div class="card-content-area">
+       <label for="password">CEP</label>
+       <input type="text" name="cep" id="password" autocomplete="off" class="textCep">
+       </div>
+
+
+
+    
+        <div class="card-footer">
+        <input type="submit" value="Cadrastar" class="submit" onclick="cadastro()">
+         
+      
+     
+         <script>
+         
+         function cadastro(){
+         alert('Usuario Cadrastado com Sucesso :D');
+         }
+
+
+            $('.textCpf').mask('000.000.000-00');
+            $('.textTel').mask('(00)00000-0000');
+            $('.textCep').mask('000000-000');
+            $('.textRg').mask('00.000.000-0');
+     
+         </script>
+     
+    </div>
+    </form>
+</body>
+</html>
